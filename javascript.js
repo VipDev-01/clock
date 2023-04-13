@@ -12,7 +12,7 @@ function setDate() {
     const seconds = date.getSeconds();
     const secondsDeg = ((seconds / 60) * 360 + 90);
     
-    if (secondsDeg > 432) {hands.style.setProperty('transition', 'null')} else {hands.style.setProperty('transition', '')}
+    if (secondsDeg > 438 || secondsDeg < 96) {hands.style.setProperty('transition', 'null')} else {hands.style.setProperty('transition', '')}
 
     const mins = date.getMinutes();
     const minsDeg = ((mins / 60) * 360 + 90);
